@@ -342,7 +342,7 @@ ORDER BY SaleAmount DESC;
 --SALE AMOUNT ni kamayish tirtibida yozib yuqoridagi 5 ta eng yuqori sotuvga egalarini korsatish
 
 --21.
-SELECT (FirstName + ' ' + LastName) AS FullName
+SELECT ISNULL(FirstName, '') + ' ' + ISNULL(LastName, '') AS FullName
 FROM Employees;
 --last name va first name bitta full name qilib yozilyabdi ammo bittasi NULL bolsa 2 chisi ozgarmayabdi Full name Null bolib qolyabdi
 
